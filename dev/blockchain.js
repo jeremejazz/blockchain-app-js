@@ -63,7 +63,10 @@ Blockchain.prototype.proofOfWork = function(previousBlockhash, currentBlockData)
        
     }
 
-    return nonce;
+    return {
+        nonce: nonce,
+        hash: hash
+    };
 
 
 };
